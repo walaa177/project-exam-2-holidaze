@@ -1,0 +1,205 @@
+.eastablishments-header {
+  background-image: url("../../images/home/header-1.jpg");
+  height: 425px;
+  @media (max-width: 767.98px) {
+    height: 350px;
+  }
+  @media (max-width: 576.98px) {
+    height: 305px;
+  }
+  &-mien {
+    display: flex;
+    justify-content: center;
+    color: $colour-white;
+    padding-top: 90px;
+    @media (max-width: 767.98px) {
+      padding-top: 50px;
+    }
+    @media (max-width: 576.98px) {
+      padding-top: 40px;
+    }
+    & h1 {
+      @media (max-width: 767.98px) {
+        font-size: 30px !important;
+      }
+    }
+  }
+}
+
+.eastablishments-content {
+  border-radius: 6px;
+  background-color: #eee;
+  width: 90%;
+  margin: -198px auto 100px auto;
+  padding: 30px;
+  @media (max-width: 576.98px) {
+    width: 100%;
+  }
+  .search {
+    display: inline-flex;
+    width: 100%;
+    @media (max-width: 767.98px) {
+      height: auto;
+      margin: 0px;
+    }
+    &-1 {
+      width: 30%;
+    }
+    &-2 {
+      width: 70%;
+    }
+
+    &-item {
+      border-radius: 0px 31px 31px 0px;
+      -moz-border-radius: 0px 31px 31px 0px;
+      -webkit-border-radius: 0px 31px 31px 0px;
+      width: 75%;
+      border: 2px solid #00486c;
+      margin-left: 0px !important;
+      height: 38px;
+      @media (max-width: 1050.98px) {
+        width: 80%;
+      }
+      @media (max-width: 900.98px) {
+        width: 95%;
+      }
+      &:focus {
+        outline: none !important;
+      }
+    }
+    &-select {
+      background-color: #00486c;
+      color: $colour-white;
+      float: right;
+      padding: 6px;
+      margin-right: 0px !important;
+      border: 2px solid #00486c;
+      border-radius: 31px 0px 0px 31px;
+      -moz-border-radius: 31px 0px 0px 31px;
+      -webkit-border-radius: 31px 0px 0px 31px;
+      height: 38px;
+      @media (max-width: 575.98px) {
+        width: 100%;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .establishments {
+    width: 80%;
+    @media (max-width: 767.98px) {
+      width: 100%;
+    }
+
+    &-card {
+      background-color: $colour-white;
+      margin: 15px;
+      height: 330px;
+      @media (max-width: 767.98px) {
+        height: auto;
+        margin: 0px;
+      }
+    }
+
+    .card-item {
+      height: 100%;
+      &:hover {
+        background-color: #aeaeae94;
+      }
+      &-content-img {
+        height: 100%;
+      }
+
+      &-image {
+        height: 100% !important;
+        width: 100% !important;
+      }
+      &-type {
+        margin-top: 10px;
+        margin-left: 17px;
+        position: absolute;
+        background-color: #eee;
+        font-weight: 500;
+        padding: 2px;
+      }
+      &-body {
+        height: 100% !important;
+        @media (max-width: 767.98px) {
+          padding: 10px;
+        }
+        .star {
+          display: flex;
+          justify-content: center;
+          @media (max-width: 767.98px) {
+            display: block;
+            justify-content: none;
+            margin: 10px;
+          }
+        }
+        .card-title {
+          justify-content: center;
+          display: flex;
+          margin: 10px;
+          color: $colour-primary;
+          font-weight: 600;
+          font-size: 30px !important;
+          padding-top: 20px;
+          @media (max-width: 767.98px) {
+            display: block;
+            padding-top: 0px;
+            font-size: 25px !important;
+          }
+        }
+        .button-details {
+          text-align: center;
+          margin-bottom: 5px;
+
+          &-button {
+            background-color: $colour-button-blue;
+            padding: 10px 20px;
+            &:hover {
+              background-color: $colour-button-blue-hover;
+            }
+            &:focus {
+              outline: none;
+            }
+            @media (max-width: 576.98px) {
+              font-size: 15px;
+              padding: 7px 15px;
+            }
+          }
+        }
+      }
+      .card-info {
+        display: flex;
+        padding: 0px 20px;
+        @media (max-width: 767.98px) {
+          display: block;
+          padding: 0px;
+          margin: 10px;
+        }
+        &-price {
+          color: $colour-black;
+          width: 70%;
+          @media (max-width: 767.98px) {
+            width: auto;
+          }
+        }
+        &-room {
+          color: $colour-black;
+          float: right;
+          @media (max-width: 767.98px) {
+            float: none;
+          }
+        }
+        &-text {
+          color: $colour-black;
+          @media (max-width: 767.98px) {
+            margin: 10px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,185 @@
+.details {
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+  &-header {
+    background-image: url("../../images/home/header-1.jpg");
+    height: 425px;
+    justify-content: center;
+    @media (max-width: 767.98px) {
+      height: 350px;
+    }
+    &-mien {
+      padding-top: 50px;
+      display: block;
+      text-align: center;
+
+      & h1 {
+        color: $colour-white;
+        @media (max-width: 767.98px) {
+          font-size: 28px !important;
+        }
+        @media (max-width: 576.98px) {
+          font-size: 23px !important;
+        }
+      }
+      & p {
+        color: $colour-white;
+        @media (max-width: 767.98px) {
+          font-size: 17px !important;
+        }
+        @media (max-width: 767.98px) {
+          font-size: 15px !important;
+        }
+      }
+    }
+  }
+  &-carousel {
+    justify-content: center;
+    width: 100%;
+    .carousel {
+      height: 500px;
+      @media (max-width: 767.98px) {
+        height: 350px;
+      }
+      @media (max-width: 576.98px) {
+        height: 300px;
+      }
+    }
+    .carousel-indicators li {
+      height: 19px;
+      width: 19px;
+      border-radius: 50%;
+    }
+    &-image {
+      object-fit: fill;
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+  &-content {
+    background-color: #eee;
+    width: 80%;
+    margin: -198px auto 100px auto;
+    justify-content: center;
+    @media (max-width: 991.98px) {
+      width: 90%;
+    }
+    @media (max-width: 767.98px) {
+      width: 98%;
+    }
+    @media (max-width: 576.98px) {
+      width: 100%;
+      margin: -198px auto 0px auto;
+    }
+    &-info {
+      &-name {
+        padding: 30px 20px;
+        color: $colour-primary;
+        @media (max-width: 576.98px) {
+          padding: 15px 20px;
+        }
+        &-head {
+          display: inline-flex;
+          & h2 {
+            @media (max-width: 576.98px) {
+              font-size: 25px !important;
+            }
+          }
+          &-star {
+            margin: auto;
+            padding-left: 20px;
+            padding-bottom: 2px;
+          }
+        }
+        &-info {
+          & p {
+            margin: 10px;
+          }
+        }
+      }
+      &-services {
+        padding-left: 20px;
+        margin-bottom: 30px;
+        @media (max-width: 576.98px) {
+          margin-bottom: 5px;
+        }
+
+        & h3 {
+          @media (max-width: 576.98px) {
+            font-size: 23px !important;
+          }
+          &:after {
+            content: "";
+            margin: 4px 0px 0px;
+            display: block;
+            width: 120px;
+            height: 4px;
+            border-radius: 2px;
+            background: linear-gradient(25deg, #00486c, #d0b376);
+          }
+        }
+      }
+      &-description {
+        padding-left: 20px;
+        margin-bottom: 30px;
+        color: $colour-black;
+        & h3 {
+          @media (max-width: 576.98px) {
+            font-size: 23px !important;
+          }
+          &:after {
+            content: "";
+            margin: 4px 0px 0px;
+            display: block;
+            width: 120px;
+            height: 4px;
+            border-radius: 2px;
+
+            background: linear-gradient(25deg, #00486c, #d0b376);
+          }
+        }
+      }
+    }
+  }
+  .booking-content {
+    padding-top: 3%;
+    box-shadow: -4px -2px 8px 0px rgba(115, 124, 128, 0.31);
+    @media (max-width: 767.98px) {
+      box-shadow: 0px -5px 0px 0px rgba(115, 124, 128, 0.31);
+      padding-bottom: 3%;
+    }
+
+    &-price {
+      & span {
+        color: $colour-button-broun-hover;
+        font-weight: 700;
+        font-size: 25px;
+        @media (max-width: 576.98px) {
+          font-size: 22px;
+        }
+      }
+    }
+
+    .input-container {
+      &-input {
+        border-bottom: 2px solid;
+        background-color: $colour-background;
+        margin: 10px 2px 10px 2px;
+      }
+    }
+    .summary {
+      color: #00000091;
+      &-days {
+        font-size: 10px;
+        & span {
+          color: $colour-button-bred-hover;
+          text-decoration: underline;
+        }
+      }
+      &-price {
+        color: $colour-button-broun-hover;
+        font-weight: 700;
+      }
+    }
+  }
+}

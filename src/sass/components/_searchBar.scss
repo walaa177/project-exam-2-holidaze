@@ -1,0 +1,81 @@
+.formControl-search {
+  width: 100%;
+}
+.autocomplete {
+  position: relative;
+  display: inline-block;
+  width: 80%;
+  border-radius: 26px;
+  @media (max-width: 576.98px) {
+    width: 100%;
+  }
+  &-link {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &-div {
+    max-height: 220px;
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    background-color: #fff;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    overflow: scroll;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 62%;
+    margin: auto;
+    margin-top: 2px;
+    overflow-x: hidden;
+    border-radius: 10px;
+    @media (max-width: 576.98px) {
+      width: 80%;
+    }
+  }
+  &-item {
+    margin: 10px 0px 0px 6px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+    padding: 10px;
+    &:hover {
+      background-color: #e9e9e9;
+      text-decoration: none !important;
+    }
+    &-box {
+      padding: 2px 2px 2px 2px !important;
+      & h5 {
+        color: $colour-primary;
+      }
+      & h6 {
+        color: $colour-secondr;
+      }
+    }
+    &-info {
+      display: inline-flex;
+      & p {
+        font-size: 16px !important;
+        margin: 0px 20px 0px 0px;
+        color: $colour-black-dark;
+      }
+      &-star {
+        margin: 0px;
+        margin-top: 0px !important;
+      }
+    }
+  }
+}
+.item-image {
+  width: 100%;
+  height: 100%;
+}
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+.closebox {
+  display: none;
+}

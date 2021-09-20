@@ -1,0 +1,21 @@
+.services {
+  display: inline-flex;
+  text-align: center;
+  &-content {
+    margin: 2px 13px 2px 2px;
+    @media (max-width: 576.98px) {
+      margin: 2px 2px 2px 2px;
+    }
+    figure svg {
+      font-size: 40px;
+      color: #00000061;
+      @media (max-width: 350.98px) {
+        font-size: 25px;
+      }
+    }
+    .figure-caption {
+      color: $colour-black;
+      font-size: 14px;
+    }
+  }
+}

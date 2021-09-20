@@ -1,0 +1,68 @@
+.noPage {
+  height: 100vh;
+  background-color: $colour-background;
+  text-align: center;
+  padding: 50px;
+  @media (max-width: 576.98px) {
+    padding: 10px;
+    padding-top: 100px;
+  }
+  &-404 {
+    height: 280px;
+    position: relative;
+    padding-top: 50px;
+    @media (max-width: 767.98px) {
+      height: 200px;
+    }
+    @media (max-width: 576.98px) {
+      height: 150px;
+    }
+
+    & h1 {
+      font-family: montserrat, sans-serif !important;
+      font-size: 230px !important;
+      margin: 0;
+      font-weight: 900 !important;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      background: url(../../images/home/bg.jpg) no-repeat;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: cover;
+      background-position: center;
+      @media (max-width: 767.98px) {
+        font-size: 150px !important;
+      }
+      @media (max-width: 576.98px) {
+        font-size: 75px !important;
+      }
+    }
+  }
+
+  & h2 {
+    font-family: "Fira Sans", Sans-Serif !important;
+    color: $colour-primary;
+    @media (max-width: 576.98px) {
+      font-size: 20px !important;
+    }
+  }
+  & a {
+    background-color: $colour-button-broun;
+    color: #000000bd !important;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    @media (max-width: 576.98px) {
+      font-size: 15px !important;
+    }
+    &:hover {
+      background-color: $colour-button-broun-hover;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}

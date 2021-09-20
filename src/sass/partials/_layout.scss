@@ -1,0 +1,16 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  font-family: "Fira Sans", Sans-Serif;
+  &:before {
+    content: "";
+    height: 100%;
+    float: left;
+    width: 0;
+  }
+}

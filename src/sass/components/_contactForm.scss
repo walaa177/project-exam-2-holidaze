@@ -1,0 +1,85 @@
+/* modal form ------------*/
+.contact-modal {
+  margin-top: 10%;
+  &-header {
+    letter-spacing: 3px;
+    font-family: "Pacifico", cursive !important;
+    color: #5892ff;
+    font-size: 35px;
+    margin: auto;
+    @media (max-width: 576.98px) {
+      font-size: 30px;
+    }
+  }
+  .modal-content {
+    height: 250px;
+    border: 1px solid $colour-primary;
+    box-shadow: 0px -1px 10px 5px $colour-primary;
+    width: 74%;
+    margin: auto;
+    margin-top: 85px;
+    & h4 {
+      letter-spacing: 3px;
+    }
+  }
+  .close {
+    margin: 0px !important;
+  }
+  .modal-body {
+    padding: 19px;
+    text-align: center;
+    color: #00000096;
+    margin-top: 15px;
+  }
+}
+
+/*contact form--------------*/
+.contact {
+  &-form {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background-image: url(http://www.elathemes.com/themes/colina/css/img/contact.png);
+    background-color: $colour-primary;
+    @media (max-width: 576.98px) {
+      width: 100%;
+    }
+  }
+  &-info {
+    width: 60%;
+    margin: auto;
+    @media (max-width: 930.98px) {
+      width: 70%;
+    }
+    @media (max-width: 767.98px) {
+      width: 85%;
+    }
+    @media (max-width: 576.98px) {
+      width: 99%;
+    }
+  }
+  .form-control {
+    background-color: $colour-background !important;
+  }
+  .form-error {
+    color: $colour-background;
+    font-size: 13px;
+  }
+  .contact-button {
+    display: flex;
+    justify-content: center;
+    & button {
+      padding: 10px 25px;
+      background-color: $colour-button-blue;
+      border: 1px solid white;
+      text-transform: uppercase;
+      @media (max-width: 576.98px) {
+        font-size: 15px !important;
+      }
+      &:hover {
+        background-color: $colour-background;
+        color: $colour-black-dark;
+      }
+    }
+  }
+}

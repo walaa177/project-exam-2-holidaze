@@ -1,0 +1,81 @@
+.dashboard {
+  padding: 57px 45px;
+
+  @media (max-width: 576.98px) {
+    padding: 1px 20px;
+  }
+  & h1 {
+    color: $colour-primary;
+  }
+  &-message {
+    width: 100% !important;
+    margin: 10px;
+    &-content {
+      display: inline-flex;
+      justify-content: center;
+      background-color: #ededed;
+    }
+  }
+}
+.card-header {
+  cursor: pointer;
+}
+
+/*table*/
+.table {
+  white-space: nowrap;
+  .booking-message {
+    color: $colour-error;
+    margin: 10px;
+    padding: 10px;
+    font-size: 19px !important;
+  }
+  &-head {
+    background-color: #4e555a !important;
+    color: $colour-white !important;
+  }
+  &-body {
+    .delete-button {
+      background-color: #be4349;
+      color: $colour-white;
+      &:hover {
+        background-color: $colour-button-bred-hover;
+      }
+    }
+  }
+}
+/*add establishment*/
+.add {
+  width: 80%;
+  margin: auto;
+  font-size: 15px;
+  &-info {
+    &-part {
+      &-type {
+        &-select {
+          padding: 1px 35px;
+          @media (max-width: 992.98px) {
+            padding: 1px 10px;
+          }
+          @media (max-width: 576.98px) {
+            padding: 1px 20px 1px 1px;
+          }
+        }
+        & select {
+          height: 33px;
+        }
+      }
+    }
+    &-button {
+      padding: 4px 33px;
+      margin: 8px 2px;
+      background-color: #00486c;
+      &:hover {
+        background-color: $colour-button-blue-hover;
+      }
+    }
+    .form-error {
+      color: $colour-error;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+/* TYPOGRAPHY: ---------------------------------- */
+h1 {
+  font-family: "Cormorant Garamond", Serif !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  font-size: 38px !important;
+  // Medium devices (tablets, less than 992px)
+  @media (max-width: 991.98px) {
+    font-size: 34px !important;
+  }
+  // Small devices (landscape phones, less than 768px)
+  @media (max-width: 767.98px) {
+    font-size: 30px !important;
+  }
+  // X-Small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) {
+    font-size: 25px !important;
+  }
+}
+
+h2 {
+  font-family: "Cormorant Garamond", Serif !important;
+  font-weight: 700 !important;
+  font-size: 32px !important;
+}
+
+h3 {
+  font-family: "Cormorant Garamond", Serif !important;
+  font-weight: 700 !important;
+  font-size: 25px !important;
+}
+
+h4 {
+  font-family: "Cormorant Garamond", Serif !important;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+h5 {
+  font-family: "Cormorant Garamond", Serif;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+}
+h6 {
+  font-family: "Fira Sans", Sans-Serif;
+  font-weight: 500 !important;
+}
+
+body,
+button {
+  font-family: "Fira Sans", Sans-Serif !important;
+  font-weight: 400;
+  font-size: clamp(14px, 2vw, 17px);
+  color: black;
+}
+/* ---------------------------------------------- */
+p {
+  font-size: 17px !important;
+  font-family: "Fira Sans", Sans-Serif !important;
+  line-height: 1.5;
+  @media screen and (max-width: 800px) {
+    font-size: 15px !important;
+  }
+}
